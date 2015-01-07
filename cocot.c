@@ -184,5 +184,5 @@ main(int argc, char *argv[])
 	fclose(logfp);
     wait(&status);
     done();
-    return 0;
+    return WEXITSTATUS(status);
 }
